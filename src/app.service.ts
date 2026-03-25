@@ -1,17 +1,17 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-
 export class AppService {
   getHello(): any {
-    return [{
-      success: true,
-      data: {
-        service: "purchase-api",
-        version: "1.0.0"
+    return [
+      {
+        success: true,
+        data: {
+          service: 'purchase-api',
+          version: '1.0.0',
+        },
+        message: 'Hello NestJS',
       },
-      message: "Hello NestJS"
-    }];
+    ];
   }
 }
-
